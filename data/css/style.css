@@ -1,0 +1,75 @@
+body{background: url(../img/bg.jpg);}
+.one {
+    background: #FFF4ED;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .one h1 {
+    font-family: 'Righteous', cursive;
+    position: relative;
+    color: #3CA1D9; 
+    display: inline-block;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    font-size: 3em;
+    padding: 11px 60px;
+    margin: 0; 
+    line-height: 1;
+  }
+  .one h1:before, .one h1:after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    background: repeating-linear-gradient(180deg, transparent, transparent 2px, #3CA1D9 2px, #3CA1D9 4px);
+  }
+  .one h1:before {left: 0;}
+  .one h1:after {right: 0;}
+  @media (max-width: 420px) {
+    .one h1 {font-size: 2em;}
+  }
+
+div.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    /* width: 6em */
+    width: 80vw;	height: 45vh; /* Размеры */
+    background: rgba(101, 162, 180, 0.116); /* Цвет фона */
+    outline: 2px solid rgba(0, 0, 0, 0.274); /* Чёрная рамка */
+    border: 3px solid rgba(255, 255, 255, 0.568); /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 28px;
+    
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+div.buttons{
+    margin-left: 46vw;
+    /* margin-right: 46%; */
+}

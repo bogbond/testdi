@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My GAME</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/ico" href="data/img/logo.ico"/>
+    <script>
+        function fun1() {
+            var rad=document.getElementsByName('r1');
+            for (var i=0;i<rad.length; i++) {
+                if (rad[i].checked) {
+                    if(i==1){
+                    alert('подумай о здоровье');}
+                    else if(i==0){
+                        // window.open("http://ya.ru");
+                         alert("Отлично, тут открывается всл страница");
+                    }
+                }
+            }
+        }
+    </script>
+  </head>
+
+  <body>
+      <header>
+          <div class="one"><h1>COOL STORY</h1></div>
+          <h2>created by <b>Black Wolf</b></h2>
+      </header>
+    <div class="blocktext">
+        <p>Отлично, вы справились ..</p><br><br>
+        <p>тут сюжетка и снова выбор который направит тебя дальше. К Примеру <br> Идем сегодня бухать? </p>
+        <input type="radio" name="r1" value="5">Не могу, у меня много дз<br>
+        <input type="radio" name="r1" value="13">По чему бы и нет<br>
+        <!-- <input type="radio" name="r1" value="53">Третий<br> -->
+        <!-- <button onclick="fun1()">Проверить, какой из элементов выбран</button> -->
+    </div>
+    <div class="buttons">
+        <a href="../../index.html" class="previous round">&#8249;</a>
+        <a href="#" class="next round" onclick="fun1()">&#8250;</a>
+    </div>
+
+
+</body>
+</html>
